@@ -30,8 +30,6 @@ export interface StudyRecord {
 }
 
 export interface AppSettings {
-  nutritionixAppId: string
-  nutritionixApiKey: string
   reminderEnabled: boolean
   reminderTime: string
 }

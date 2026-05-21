@@ -55,31 +55,6 @@ export default function SettingsPage() {
           ))}
         </div>
 
-        {/* Nutritionix API settings */}
-        <div className="card">
-          <h3 className="text-lg font-bold text-pinky-400 mb-3">🔑 Nutritionix API</h3>
-          <p className="text-xs text-gray-400 mb-3">
-            用于食物热量识别，请前往{' '}
-            <a href="https://developer.nutritionix.com" target="_blank" className="text-pinky-400 underline">
-              developer.nutritionix.com
-            </a>{' '}
-            注册免费账号获取
-          </p>
-          <input
-            value={settings.nutritionixAppId}
-            onChange={e => setSettings({ ...settings, nutritionixAppId: e.target.value })}
-            placeholder="App ID"
-            className="input-cute text-sm mb-2"
-          />
-          <input
-            value={settings.nutritionixApiKey}
-            onChange={e => setSettings({ ...settings, nutritionixApiKey: e.target.value })}
-            placeholder="API Key"
-            type="password"
-            className="input-cute text-sm"
-          />
-        </div>
-
         {/* Reminder */}
         <div className="card">
           <h3 className="text-lg font-bold text-pinky-400 mb-3">🔔 每日提醒</h3>

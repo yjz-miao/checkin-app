@@ -22,7 +22,7 @@ export default function WeightPage() {
 
   useEffect(() => { refresh() }, [])
 
-  const handleFoodRecognized = (name: string, cal: number) => {
+  const handleFoodRecognized = (name: string, cal: number, imageUrl?: string) => {
     const record: CalorieRecord = {
       id: uuid(),
       date: today(),
@@ -30,6 +30,7 @@ export default function WeightPage() {
       meal: 'lunch',
       foodName: name,
       calories: cal,
+      imageUrl,
     }
     saveCalorie(record)
     refresh()

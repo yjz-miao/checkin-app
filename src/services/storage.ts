@@ -46,8 +46,6 @@ export function deleteStudyRecord(id: string) { set(STUDY_KEY, getStudyRecords()
 // ─── Settings ───
 const SETTINGS_KEY = 'checkin_settings'
 const defaultSettings: AppSettings = {
-  nutritionixAppId: '',
-  nutritionixApiKey: '',
   reminderEnabled: false,
   reminderTime: '20:00',
 }
